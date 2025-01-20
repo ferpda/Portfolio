@@ -20,7 +20,7 @@ p, li, a {
 header {
     width: 100%;
     height: auto;
-    position: fixed;
+    /* position: fixed; */
     z-index: 9999;
     top: 0; 
 }
@@ -51,6 +51,17 @@ header menu nav {
 nav li {
     list-style: none;
     padding: 0 20px;
+    background-color: #1D2D44;
+    border-radius: 10px;
+}
+nav li:hover{
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    transition: 0.3s linear;
+    padding: 10px 20px 10px 20px;
+}
+nav li a:hover{
+    color: black;
 }
 nav li a {
     color: #F0EBD8;
@@ -75,10 +86,10 @@ main {
     max-width: 1200px;
     margin: 0 auto; 
     min-height: 50%; 
-    background-color: #f9f9f9;
+    background: linear-gradient(to right, #f9f9f9 50%, #3E5C76 50%);
     position: relative; 
     padding: 20px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0.5px 2px 20px rgba(0, 0, 0, 0.319);
     border-radius: 10px;
 }
 .box .left, .box .right {
@@ -149,8 +160,183 @@ footer .footer-text {
 footer .footer-text li{
     list-style: none;
 }
+footer li:hover{
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    transition: 0.3s linear;
+    padding: 10px 0 10px 0;
+}
 footer .footer-text a{
     padding: 0 20px;
     color: #F0EBD8;
     text-transform: uppercase;
+}
+footer .footer-text a:hover{
+    color: black;
+}
+.mh{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.proj1, .proj2, .proj3{
+    width: 300px;
+    height: 300px;
+    background-color: #748CAB;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 5px;
+}
+.proj2{
+    background-color: #3E5C76;
+}
+.proj3{
+    background-color: #1D2D44;
+}
+.proj1 img, .proj2 img, .proj3 img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+    transform: scale(1);
+}
+.mh p{
+    margin: 0;
+    position: relative;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.mh h2{
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.proj1 img:hover, .proj2 img:hover, .proj3 img:hover{
+    transform: scale(1.05);
+    transition: 0.2s linear;
+    box-shadow: 0.5px 2px 20px rgba(0, 0, 0, 0.319);
+}
+.contact{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-box{
+    background: linear-gradient(to right, #3E5C76 50%, #748CAB 50%);
+    height: 500px;
+    width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0.5px 2px 20px rgba(0, 0, 0, 0.319);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.phone-box{
+    background-color: #f9f9f9ee;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    margin-right: 2.5px;
+    border-radius: 5px;
+    
+}
+.email-box{
+    background-color: #f9f9f9;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    margin-left: 2.5px;
+    border-radius: 5px;
+}
+.resume{
+    padding: 20px;
+}
+.resume ul{
+    padding: 20px;
+}
+.resume li, .resume p{
+    font-size: 16px;
+}
+.myinfo{
+    text-align: center;
+}
+.myinfo h2{
+    font-size: 22px;
+}
+.myinfo h3{
+    font-size: 16px;
+    font-weight: normal;
+}
+.myinfo h2, .myinfo h3{
+    letter-spacing: 1px;
+}
+.myinfo p{
+    font-size: 14px;
+    padding: 5px;
+}
+.obj h3{
+    font-weight: normal;
+    font-size: 16px;
+    padding: 5px;
+}
+.obj span{
+    font-weight: bold;
+    font-size: 16px;
+}
+.qual h3{
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    font-size: 18px;
+}
+.skills h3{
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+.ed h3{
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+.ed span{
+    display: flex;
+    justify-content: flex-end;
+}
+.empexp h3{
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+.empexp span{
+    display: flex;
+    justify-content: flex-end;
+}
+.volexp h3{
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+.volexp span{
+    display: flex;
+    justify-content: flex-end;
+}
+.projects h3{
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+.projects span{
+    display: flex;
+    justify-content: flex-end;
+}
+.projects a{
+    color: black;
+    cursor: default;
+}
+.projects a:hover{
+    cursor: pointer;
+    color: #1D2D44;
+    text-decoration: underline;
 }
