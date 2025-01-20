@@ -340,3 +340,31 @@ footer .footer-text a:hover{
     color: #1D2D44;
     text-decoration: underline;
 }
+.abme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.abme-title{
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.abme-text{
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+}
+.abme-text h3{
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.abme-img img{
+    /* clip-path: ellipse(30% 50% at 50% 50%); */
+    border-radius: 10px;
+    padding: 20px;
+}
