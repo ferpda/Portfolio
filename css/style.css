@@ -254,6 +254,21 @@ footer .footer-text a:hover{
     margin-left: 2.5px;
     border-radius: 5px;
 }
+.fform{
+    background-color: red;
+    width: 50%;
+    height: auto;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    width: 30%;
+}
+
 .resume{
     padding: 20px;
 }
