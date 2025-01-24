@@ -19,6 +19,7 @@ p,a,li,figcaption,label{
     text-decoration: none;
 }
 /* header */
+
 header{
     display: flex;
     align-items: center;
@@ -28,7 +29,23 @@ header{
     position: fixed;
     z-index: 9999;
 }
+#header-ctn-pg{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 150px;
+    width: 100%;
+    position: sticky;
+}
 header nav{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+#header-ctn-pg nav{
     display: flex;
     margin: 0;
     padding: 0;
@@ -40,10 +57,26 @@ header menu{
     display: flex;
     list-style: none;
 }
+#header-ctn-pg menu{
+    display: flex;
+    list-style: none;
+}
 header menu li{
     padding: 5px 20px;
 }
+#header-ctn-pg menu li{
+    padding: 5px 20px;
+}
 header menu li a{
+    color: black;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-bottom: solid 2px white;
+    border-left: solid 2px black;
+    padding: 0 10px;
+    transition: all .4s ease-in-out;
+}
+#header-ctn-pg menu li a{
     color: black;
     text-transform: uppercase;
     font-size: 18px;
@@ -57,7 +90,16 @@ header menu a:hover{
     transition: all .4s ease-in-out;
     border-left: solid 2px white;
 }
+#header-ctn-pg menu a:hover{
+    border-bottom: solid 2px black;
+    transition: all .4s ease-in-out;
+    border-left: solid 2px white;
+}
 header div img{
+    width: 150px;
+    height: 100%;
+}
+#header-ctn-pg div img{
     width: 150px;
     height: 100%;
 }
@@ -220,9 +262,9 @@ header div img{
 }
 /* resume page */
 .resume {
-    background: linear-gradient(to right, rgba(79, 79, 79, 0.449) 30%, white 30%);
+    background: linear-gradient(to right, rgb(216, 216, 216) 30%, white 30%);
     width: 90%;
-    margin: 0 auto;
+    margin: 10px auto;
     border: solid 1px black;
     display: flex;
     flex-direction: column;
@@ -282,6 +324,19 @@ header div img{
     letter-spacing: 1px;
     padding: 5px 0;
     font-weight: 300;
+}
+.details a{
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 5px 0;
+    font-weight: 300;
+    color: black;
+    transition: all .3s ease;
+}
+.details a:hover{
+    color: #56CCF2;
+    transition: all .3s ease;
+    text-decoration: underline;
 }
 .skills{
     padding: 0 10px;
@@ -348,9 +403,6 @@ header div img{
     letter-spacing: .5px;
     padding: 5px 0;
 }
-.ed span{
-    padding-left: 264px;
-}
 .empexp h3{
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -363,10 +415,6 @@ header div img{
     letter-spacing: .5px;
     padding: 5px 0;
     font-weight: bold;
-}
-.empexp span{
-    padding-left: 411px;
-    font-weight: lighter;
 }
 .empexp ul{
     padding: 0 12px;
@@ -391,10 +439,6 @@ header div img{
     padding: 5px 0;
     font-weight: bold;
 }
-.volexp span{
-    padding-left: 290px;
-    font-weight: lighter;
-}
 .volexp ul{
     padding: 0 12px;
     list-style: square;
@@ -418,10 +462,6 @@ header div img{
     padding: 5px 0;
     font-weight: bold;
 }
-.projects span{
-    padding-left: 260px;
-    font-weight: lighter;
-}
 .projects ul{
     padding: 0 12px;
     list-style: square;
@@ -440,6 +480,102 @@ header div img{
     transition: all .3s ease;
     color: #56CCF2;
     text-decoration: underline;
+}
+.span-date{
+    font-weight: 400;
+    font-size: 14px;
+}
+/* contact pg */
+/* create header just for contact page to keep header fixed in that page */
+.ctnc{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../media/dummybg.png");
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+.contact-pg{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffd900cb;
+}
+.contact-pg div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact-pg h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: lighter;
+    padding: 10px 0;
+    letter-spacing: 2px;
+}
+.input-area{
+    padding: 10px;
+    border: none;
+    border-bottom: solid 1px black;
+    margin: 20px 0;
+    background-color: #FFD700;
+    width: 500px;
+    transition: all .3s ease;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+.input-area:focus{
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.input-area::placeholder{
+    color: black;
+}
+.msg-area{
+    width: 500px;
+    height: auto;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    resize: none;
+    outline: none;
+    border: none;
+    border: solid 1px black;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    color: black;
+}
+.msg-area:focus {
+    border-color: #007bff; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+.submit-btn{
+    padding: 10px;
+    width: 100px;
+    outline: none;
+    border: none;
+    border-left: solid 1px #FFD700;
+    border-right: solid 1px #FFD700;
+    border-bottom: solid 1px black;
+    border-top: solid 1px black;
+    color: black;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background-color: #FFD700;
+    transition: all .3s ease-in-out;
+}
+.submit-btn:hover{
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+    border-bottom: solid 1px #FFD700;
+    border-top: solid 1px #FFD700;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
 }
 /* footer */
 footer{

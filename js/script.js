@@ -3,6 +3,7 @@ $(document).ready(function() {
         $("#header").load("./header.html")
         $("#footer").load("./footer.html")
         $("#footer-resume").load("./footer-resume.html")
+        $("#header-ctn-pg").load("./header-ctn-pg.html")
     });
 });
 
