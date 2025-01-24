@@ -18,6 +18,7 @@ p,a,li,figcaption,label{
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
 }
+/* header */
 header{
     display: flex;
     align-items: center;
@@ -60,6 +61,7 @@ header div img{
     width: 150px;
     height: 100%;
 }
+/* home page */
 .main-mh{
     height: 100vh;
     background-image: url("../media/dummybg.png");
@@ -216,17 +218,259 @@ header div img{
     transition: all .3s ease-in-out;
     cursor: pointer;
 }
+/* resume page */
+.resume {
+    background: linear-gradient(to right, rgba(79, 79, 79, 0.449) 30%, white 30%);
+    width: 90%;
+    margin: 0 auto;
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    /* align-items: stretch;  */
+}
+.myname{
+    background-color: white;
+    width: 40%;
+    height: 100px;
+    padding: 50px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: solid 1px black;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.myname h2{
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+.left-column {
+    width: 30%; 
+    padding: 20px;
+    box-sizing: border-box;
+    padding: 20px 40px;
+}
+.details{
+    padding: 0 10px;
+}
+.details h4{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-bottom: solid 1px black;
+    padding: 5px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.details h5{
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 10px 0;
+    font-weight: 600;
+}
+.details p{
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 5px 0;
+    font-weight: 300;
+}
+.skills{
+    padding: 0 10px;
+}
+.skills h3{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-bottom: solid 1px black;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.skills li{
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 5px 0;
+    font-weight: 300;
+}
+.skills ul{
+    padding: 0 12px;
+    list-style: square;
+}
+.right-column {
+    width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+    /* background-color: red; */
+}
+.obj h3{
+    font-weight: 300;
+}
+.obj span{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+.qual h3{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    border-bottom: solid 1px black;
+    padding: 10px 0;
+}
+.qual ul{
+    padding: 0 12px;
+    list-style: square;
+    padding-left: 30px;
+}
+.qual li{
+    font-size: 16px;
+    letter-spacing: .5px;
+    padding: 5px 0;
+    /* font-weight: 300; */
+}
+.ed h3{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    border-bottom: solid 1px black;
+    padding: 10px 0;
+}
+.ed p{
+    font-size: 16px;
+    letter-spacing: .5px;
+    padding: 5px 0;
+}
+.ed span{
+    padding-left: 264px;
+}
+.empexp h3{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    border-bottom: solid 1px black;
+    padding: 10px 0;
+}
+.empexp p{
+    font-size: 16px;
+    letter-spacing: .5px;
+    padding: 5px 0;
+    font-weight: bold;
+}
+.empexp span{
+    padding-left: 411px;
+    font-weight: lighter;
+}
+.empexp ul{
+    padding: 0 12px;
+    list-style: square;
+    padding-left: 30px;
+}
+.empexp li{
+    font-size: 16px;
+    letter-spacing: .5px;
+    padding: 5px 0;
+}
+.volexp h3{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    border-bottom: solid 1px black;
+    padding: 10px 0;
+}
+.volexp p{
+    font-size: 16px;
+    letter-spacing: .5px;
+    padding: 5px 0;
+    font-weight: bold;
+}
+.volexp span{
+    padding-left: 290px;
+    font-weight: lighter;
+}
+.volexp ul{
+    padding: 0 12px;
+    list-style: square;
+    padding-left: 30px;
+}
+.volexp li{
+    font-size: 16px;
+    letter-spacing: .5px;
+    padding: 5px 0;
+}
+.projects h3{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    border-bottom: solid 1px black;
+    padding: 10px 0;
+}
+.projects p{
+    font-size: 16px;
+    letter-spacing: .5px;
+    padding: 5px 0;
+    font-weight: bold;
+}
+.projects span{
+    padding-left: 260px;
+    font-weight: lighter;
+}
+.projects ul{
+    padding: 0 12px;
+    list-style: square;
+    padding-left: 30px;
+}
+.projects li{
+    font-size: 16px;
+    letter-spacing: .5px;
+    padding: 5px 0;
+}
+.projects a{
+    color: black;
+    transition: all .3s ease;
+}
+.projects a:hover{
+    transition: all .3s ease;
+    color: #56CCF2;
+    text-decoration: underline;
+}
+/* footer */
 footer{
     display: flex;
     background-color: white;
     width: 100%;
     height: 150px;
 }
+#footer-resume{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 150px;
+}             
 .footer-img img{
     width: 150px;
     height: auto;
 }
+#footer-resume .footer-img img{
+    width: 150px;
+    height: auto;
+}
 .footer-elements{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    width: 100%;
+    gap: 20px;
+}
+#footer-resume .footer-elements{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -243,16 +487,39 @@ footer{
     text-transform: uppercase;
     transition: all .3s ease-in-out;
 }
+#footer-resume .footer-elements button{
+    width: 200px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    background-color: #56CCF2;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+}
 .footer-elements button:hover{
     background-color: #FFD700;
     transition: all .3s ease-in-out;
     cursor: pointer;
-}    
+}   
+#footer-resume button:hover{
+    background-color: #FFD700;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
 .footer-desc{
     text-align: center;
     width: 30%;
     margin-left: auto;
 }
+#footer-resume .footer-desc{
+    text-align: center;
+    width: 30%;
+    margin-left: auto;
+    color: white;
+}
 .footer-form{
+    padding: 0 130px;
+}
+#footer-resume .footer-form{
     padding: 0 130px;
 }
