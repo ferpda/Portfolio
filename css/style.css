@@ -1,7 +1,10 @@
 /* Base: White
-Primary: Black (#000000)
-Secondary: Light blue (#56CCF2)
-Accent: Bright yellow (#FFD700)
+Header: (#1F2937)
+Bg: (#F9FAFB)
+Button/Links: (#14B8A6)
+Hover: (#F59E0B)
+Input field: #D1D5DB
+Muted Gray/Charcoal Gray: #9CA3AF/#374151
  */
 
 *{
@@ -164,31 +167,28 @@ header div img{
     transform: translateX(0);
     opacity: 1;
 }
-.projects{
-    height: 500px;
-    margin: 50px;
-}
 .slider{
-    height: 100%;
+    height: 500px;
     position: relative;
     overflow: hidden;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
+    background-color: #56CCF2;
 }
 .slider-nav{
     width: 12px;
     height: 12px;
     margin: 20px 12px;
     z-index: 10;
-    outline: 6px solid #56CCF2;
+    outline: 6px solid #000000;
     outline-offset: -6px;
     box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
     cursor: pointer;
 }
 .slider-nav:checked{
-    animation: check .4s linear forwards;
+    animation: check .5s linear forwards;
 }
 .slider-nav:checked:nth-of-type(1)~.slider-inner{
     left: 0%;
@@ -206,7 +206,7 @@ header div img{
     width: 300%;
     height: 100%;
     display: flex;
-    transition: left .4s;
+    transition: left 1s;
 }
 .slider-contents{
     height: 100%;
@@ -222,10 +222,15 @@ header div img{
 .slider-img{
     width: auto;
     height: 200px;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: all .3s ease-in-out;
+    z-index: 3;
 }
-.slider-title{
-    margin: 20px 0 10px;
-    text-transform: uppercase;
+.slider-img:hover{
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.242);
 }
 @keyframes check{
     50%{
@@ -244,7 +249,7 @@ header div img{
     clip-path: polygon(100% 0, 100% 100%, 50% 91%, 0 100%, 0 0);
 }
 .resume-button div{
-    background-color: #56CCF2;
+    background-color: #14B8A6;
     text-align: center;
     padding: 20px 60px;
     border-radius: 10px;
@@ -256,7 +261,7 @@ header div img{
     font-size: 20px;
 }
 .resume-button div:hover{
-    background-color: #FFD700;
+    background-color: #F59E0B;
     transition: all .3s ease-in-out;
     cursor: pointer;
 }
@@ -646,6 +651,11 @@ footer{
     text-align: center;
     width: 30%;
     margin-left: auto;
+}
+.footer-desc div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #footer-resume .footer-desc{
     text-align: center;
