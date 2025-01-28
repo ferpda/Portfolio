@@ -26,7 +26,7 @@ p,a,li,figcaption,label{
 header{
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: #1F2937;
     height: 150px;
     width: 100%;
     position: fixed;
@@ -35,7 +35,7 @@ header{
 #header-ctn-pg{
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: #1F2937;
     height: 150px;
     width: 100%;
     position: sticky;
@@ -71,32 +71,32 @@ header menu li{
     padding: 5px 20px;
 }
 header menu li a{
-    color: black;
+    color: white;
     text-transform: uppercase;
     font-size: 18px;
-    border-bottom: solid 2px white;
-    border-left: solid 2px black;
+    border-bottom: solid 2px #1F2937;
+    border-left: solid 2px white;
     padding: 0 10px;
     transition: all .4s ease-in-out;
 }
 #header-ctn-pg menu li a{
-    color: black;
+    color: white;
     text-transform: uppercase;
     font-size: 18px;
-    border-bottom: solid 2px white;
-    border-left: solid 2px black;
+    border-bottom: solid 2px #1F2937;
+    border-left: solid 2px white;
     padding: 0 10px;
     transition: all .4s ease-in-out;
 }
 header menu a:hover{
-    border-bottom: solid 2px black;
+    border-bottom: solid 2px white;
     transition: all .4s ease-in-out;
-    border-left: solid 2px white;
+    border-left: solid 2px #1F2937;
 }
 #header-ctn-pg menu a:hover{
-    border-bottom: solid 2px black;
+    border-bottom: solid 2px white;
     transition: all .4s ease-in-out;
-    border-left: solid 2px white;
+    border-left: solid 2px #1F2937;
 }
 header div img{
     width: 150px;
@@ -109,11 +109,12 @@ header div img{
 /* home page */
 .main-mh{
     height: 100vh;
-    background-image: url("../media/dummybg.png");
+    background-image: url("../media/WhatsApp\ Image\ 2025-01-28\ at\ 9.59.54\ AM.jpeg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     clip-path: polygon(100% 0, 100% 100%, 50% 91%, 0 100%, 0 0);
+    /* background-color: red; */
 }
 .mask{
     width: 100%;
@@ -146,6 +147,8 @@ header div img{
 .row-1-img img, .row-2-img img, .row-3-img img{
     border-radius: 15px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.116);
+    width: 500px;
+    height: 500px;
 }
 .slide-right{
     position: relative;
@@ -175,14 +178,14 @@ header div img{
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
-    background-color: #56CCF2;
+    background-color: #374151;
 }
 .slider-nav{
     width: 12px;
     height: 12px;
     margin: 20px 12px;
     z-index: 10;
-    outline: 6px solid #000000;
+    outline: 6px solid #14B8A6;
     outline-offset: -6px;
     box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
     cursor: pointer;
@@ -231,13 +234,14 @@ header div img{
     transform: scale(1.1);
     transition: all .3s ease-in-out;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.242);
+    cursor: pointer;
 }
 @keyframes check{
     50%{
-        outline-color: #FFD700;
+        outline-color: #F59E0B;
     }
     100% {
-        outline-color: #FFD700;
+        outline-color: #F59E0B;
     }
 }
 .resume-button{
@@ -246,7 +250,7 @@ header div img{
     height: 50vh;
     align-items: center;
     justify-content: center;
-    clip-path: polygon(100% 0, 100% 100%, 50% 91%, 0 100%, 0 0);
+    /* clip-path: polygon(100% 0, 100% 100%, 50% 91%, 0 100%, 0 0); */
 }
 .resume-button div{
     background-color: #14B8A6;
@@ -339,7 +343,7 @@ header div img{
     transition: all .3s ease;
 }
 .details a:hover{
-    color: #56CCF2;
+    color: #F59E0B;
     transition: all .3s ease;
     text-decoration: underline;
 }
@@ -483,7 +487,7 @@ header div img{
 }
 .projects a:hover{
     transition: all .3s ease;
-    color: #56CCF2;
+    color: #F59E0B;
     text-decoration: underline;
 }
 .span-date{
@@ -509,7 +513,7 @@ header div img{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ffd900cb;
+    background-color: #D1D5DB;
 }
 .contact-pg div{
     display: flex;
@@ -529,15 +533,15 @@ header div img{
     border: none;
     border-bottom: solid 1px black;
     margin: 20px 0;
-    background-color: #FFD700;
+    background-color: #D1D5DB;
     width: 500px;
     transition: all .3s ease;
     outline: none;
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 .input-area:focus{
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    border-color: #F59E0B;
+    box-shadow: 0 1px 1px -2px #F59E0B;
 }
 .input-area::placeholder{
     color: black;
@@ -555,63 +559,46 @@ header div img{
     color: black;
 }
 .msg-area:focus {
-    border-color: #007bff; /* Change border color on focus */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    border-color: #F59E0B; /* Change border color on focus */
+    box-shadow: 2px 2px 5px #F59E0B(0, 123, 255, 0.5);
   }
 .submit-btn{
     padding: 10px;
     width: 100px;
     outline: none;
     border: none;
-    border-left: solid 1px #FFD700;
-    border-right: solid 1px #FFD700;
+    border-left: solid 1px #F59E0B;
+    border-right: solid 1px #F59E0B;
     border-bottom: solid 1px black;
     border-top: solid 1px black;
     color: black;
     text-transform: uppercase;
     font-size: 16px;
     letter-spacing: 1px;
-    background-color: #FFD700;
+    background-color: #F59E0B;
     transition: all .3s ease-in-out;
 }
 .submit-btn:hover{
     border-left: solid 1px black;
     border-right: solid 1px black;
-    border-bottom: solid 1px #FFD700;
-    border-top: solid 1px #FFD700;
+    border-bottom: solid 1px #F59E0B;
+    border-top: solid 1px #F59E0B;
     transition: all .3s ease-in-out;
     cursor: pointer;
+    /* background-color: #F59E0B; */
 }
 /* footer */
 footer{
     display: flex;
-    background-color: white;
+    background-color: #1F2937;
     width: 100%;
     height: 150px;
-}
-#footer-resume{
-    display: flex;
-    background-color: rgb(0, 0, 0);
-    width: 100%;
-    height: 150px;
-}             
+}           
 .footer-img img{
     width: 150px;
     height: auto;
 }
-#footer-resume .footer-img img{
-    width: 150px;
-    height: auto;
-}
 .footer-elements{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 10px;
-    width: 100%;
-    gap: 20px;
-}
-#footer-resume .footer-elements{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -624,48 +611,26 @@ footer{
     height: 40px;
     border-radius: 50px;
     border: none;
-    background-color: #56CCF2;
-    text-transform: uppercase;
-    transition: all .3s ease-in-out;
-}
-#footer-resume .footer-elements button{
-    width: 200px;
-    height: 40px;
-    border-radius: 50px;
-    border: none;
-    background-color: #56CCF2;
+    background-color: #14B8A6;
     text-transform: uppercase;
     transition: all .3s ease-in-out;
 }
 .footer-elements button:hover{
-    background-color: #FFD700;
+    background-color: #F59E0B;
     transition: all .3s ease-in-out;
     cursor: pointer;
 }   
-#footer-resume button:hover{
-    background-color: #FFD700;
-    transition: all .3s ease-in-out;
-    cursor: pointer;
-}
 .footer-desc{
     text-align: center;
     width: 30%;
     margin-left: auto;
+    color: white;
 }
 .footer-desc div{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#footer-resume .footer-desc{
-    text-align: center;
-    width: 30%;
-    margin-left: auto;
-    color: white;
-}
 .footer-form{
-    padding: 0 130px;
-}
-#footer-resume .footer-form{
     padding: 0 130px;
 }
